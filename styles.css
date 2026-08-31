@@ -18,6 +18,19 @@ body {
 
     font-family: Arial, sans-serif;
 }
+/* 
+Navlink styles
+*/
+.page {
+    display: none;
+
+    padding: 45px;
+}
+
+.page.active {
+    display: block;
+}
+
 
 .portfolio {
     width: min(1400px, 95%);
@@ -136,3 +149,4 @@ Cards
 
     gap: 20px;
 }
+

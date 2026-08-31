@@ -1,0 +1,138 @@
+:root {
+    --accent: #f5c451;
+}
+color: var(--accent);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    background: #121212;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+}
+
+.portfolio {
+    width: min(1400px, 95%);
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 330px 1fr;
+
+    gap: 30px;
+}
+
+.sidebar {
+    background: #1d1d1d;
+
+    border: 1px solid #333;
+
+    border-radius: 25px;
+
+    padding: 40px 35px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 30px;
+}
+
+.profile h1 {
+    margin: 25px 0 15px;
+
+    font-size: 30px;
+}
+
+.profile p {
+    display: inline-block;
+
+    margin: 0;
+
+    padding: 10px 22px;
+
+    background: #303030;
+
+    border-radius: 10px;
+
+    color: #ddd;
+}
+.main-content {
+    background: #1d1d1d;
+
+    border: 1px solid #333;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 40px;
+
+    padding: 25px 40px;
+
+    background: #252525;
+
+    border-bottom: 1px solid #333;
+}
+
+.nav-link {
+    border: none;
+
+    background: transparent;
+
+    color: #ddd;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.nav-link.active {
+    color: var(--accent);
+}
+/*
+Cards
+*/
+.services {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.service-card {
+    background: #222;
+
+    border: 1px solid #333;
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    display: flex;
+
+    gap: 20px;
+}

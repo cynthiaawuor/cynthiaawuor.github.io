@@ -199,12 +199,14 @@ yat:
 markdown: kramdown
 kmarkdown:
   input: GFM
-
+  
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-theme: jekyll-theme-dinky
+theme: jekyll-theme-minimal

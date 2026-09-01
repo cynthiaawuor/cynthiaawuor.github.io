@@ -1,344 +1,548 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-<!-- 
-layout: home
-title: Home
-banner: "assets/images/banners/home.jpeg" -->
----
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cynthia Otieno | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="sidebar-panel">
+        <div class="profile-card">
+          <div class="avatar-frame">
+            <img src="images/profile.png" alt="Cynthia Otieno" />
+          </div>
 
-<head>
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Cynthia Otieno | Software Developer</title>
-
-    <link rel="stylesheet" href="styles.css"></link>
-</head>
-
-<body>
-
-    <main class="portfolio">
-
-        <!-- SIDEBAR -->
-        <aside class="sidebar">
-
-    <div class="profile">
-
-        <img
-            src="images/profile.png"
-            alt="Cynthia Otieno"
-        >
-
-        <h1>Cynthia Otieno</h1>
-
-        <p>Software Developer</p>
-
-    </div>
-
-
-    <div class="divider"></div>
-
-
-    <div class="contact-info">
-
-        <div class="contact-item">
-
-            <span class="icon">✉</span>
-
-            <div>
-                <small>EMAIL</small>
-                <p>cynthia.otieno.dev@gmail.com</p>
-            </div>
-
+          <h1>Cynthia Otieno</h1>
+          <div class="role-pill">Software developer</div>
         </div>
 
-
-        <div class="contact-item">
-
-            <span class="icon">☎</span>
-
+        <div class="meta-list">
+          <div class="meta-item">
+            <span class="meta-icon">✉</span>
             <div>
-                <small>PHONE</small>
-                <p>+254 759 237 246</p>
+              <small>EMAIL</small>
+              <p>cynthia.otieno.dev@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- <div class="meta-item">
+            <span class="meta-icon">☎</span>
+            <div>
+              <small>PHONE</small>
+              <p>+254 (759) 237-246</p>
+            </div>
+          </div> -->
+
+          <div class="meta-item">
+            <span class="meta-icon">📍</span>
+            <div>
+              <small>LOCATION</small>
+              <p>Kisii, Kenya</p>
+            </div>
+          </div>
+        </div>
+        <div class="social-links" aria-label="Social media links">
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/cynthia-o-466806140/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Cynthia's LinkedIn profile"
+          >
+            <span aria-hidden="true">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            class="social-link"
+            href="https://github.com/cynthiaawuor"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit Cynthia's GitHub profile"
+          >
+            <span class="github-mark" aria-hidden="true">⌘</span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </aside>
+
+      <main class="content-panel">
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-link" data-page="about">About</button>
+          <button class="nav-link active" data-page="resume">Resume</button>
+          <button class="nav-link" data-page="portfolio">Portfolio</button>
+          <button class="nav-link" data-page="blog">Blog</button>
+          <!-- <button class="nav-link" data-page="contact">Contact</button> -->
+        </nav>
+
+        <div class="page-stack">
+          <section id="about" class="page">
+            <div class="section-header">
+              <h2>About Me</h2>
+              <span class="title-rule"></span>
             </div>
 
-        </div>
-
-        <div class="contact-item">
-
-            <span class="icon">📍</span>
-
-            <div>
-                <small>LOCATION</small>
-                <p>Kenya</p>
+            <div class="intro-copy">
+              <p>
+                I am a creative and detail-oriented software developer with a
+                focus on product design, modern interfaces, and smooth digital
+                experiences.
+              </p>
+              <p>
+                I enjoy translating ideas into clean, accessible,
+                high-performing web products that feel intuitive on every
+                screen.
+              </p>
             </div>
 
-        </div>
-
-    </div>
-
-</aside>
-
- 
-
-
-        <!-- MAIN CONTENT -->
- <section class="main-content">
-    <nav class="navbar">
-
-        <button class="nav-link active" data-page="about">
-            About
-        </button>
-
-        <button class="nav-link" data-page="resume">
-            Resume
-        </button>
-
-        <button class="nav-link" data-page="portfolio">
-            Portfolio
-        </button>
-
-        <button class="nav-link" data-page="blog">
-            Blog
-        </button>
-
-        <button class="nav-link" data-page="contact">
-            Contact
-        </button>
-
-    </nav>
-
-
-    <div class="pages">
-
-        <!-- About -->
-<section id="about" class="about-section">
-
-    <!-- About Me -->
-    <div class="about-introduction">
-
-        <h2>About Me</h2>
-
-        <div class="section-underline"></div>
-
-        <p>
-            I'm a frontend developer specializing in building
-            modern, responsive and user-friendly web applications.
-            I enjoy turning complex problems into simple and
-            intuitive digital experiences.
-        </p>
-
-        <p>
-            My goal is to build websites and applications that
-            are not only functional, but also accessible,
-            beautiful and easy to use.
-        </p>
-
-    </div>
-
-
-    <!-- What I'm Doing -->
-    <div class="what-im-doing">
-
-        <h3>What I'm Doing</h3>
-
-
-        <div class="services-grid">
-
-            <!-- Service 1 -->
-            <article class="service-card">
-
-                <div class="service-icon">
-                    ✎
-                </div>
-
-                <div class="service-content">
-
+            <div class="services-block">
+              <h3>What I am Doing</h3>
+              <div class="services-grid">
+                <!-- <article class="service-card">
+                  <div class="service-icon">✎</div>
+                  <div>
                     <h4>Web Design</h4>
-
                     <p>
-                        Creating clean, modern and user-friendly
-                        interfaces with a focus on usability and
-                        visual design.
+                      Designing polished, intuitive interfaces around product
+                      goals, user behavior, and visual clarity.
                     </p>
+                  </div>
+                </article> -->
 
-                </div>
-
-            </article>
-
-
-            <!-- Service 2 -->
-            <article class="service-card">
-
-                <div class="service-icon">
-                    &lt;/&gt;
-                </div>
-
-                <div class="service-content">
-
+                <article class="service-card">
+                  <div class="service-icon">&lt;/&gt;</div>
+                  <div>
                     <h4>Web Development</h4>
-
                     <p>
-                        Building high-quality and responsive
-                        websites using modern web technologies.
+                      Building responsive experiences using clean code, modern
+                      tools, and maintainable architecture.
                     </p>
+                  </div>
+                </article>
 
-                </div>
-
-            </article>
-
-
-            <!-- Service 3 -->
-            <article class="service-card">
-
-                <div class="service-icon">
-                    ▣
-                </div>
-
-                <div class="service-content">
-
-                    <h4>Mobile Apps</h4>
-
+                <article class="service-card">
+                  <div class="service-icon">▣</div>
+                  <div>
+                    <h4>Backend Development</h4>
                     <p>
-                        Developing responsive applications and
-                        interfaces that provide a great experience
-                        across different devices.
+                      Creating product experiences that feel smooth and reliable
+                      across mobile and tablet interfaces.
                     </p>
+                  </div>
+                </article>
 
-                </div>
-
-            </article>
-
-
-            <!-- Service 4 -->
-            <article class="service-card">
-
-                <div class="service-icon">
-                    ◎
-                </div>
-
-                <div class="service-content">
-
+                <article class="service-card">
+                  <div class="service-icon">◎</div>
+                  <div>
                     <h4>UI Development</h4>
-
                     <p>
-                        Turning designs into reusable, accessible
-                        and interactive user interfaces.
+                      Turning design systems into scalable, reusable interfaces
+                      that are both beautiful and functional.
                     </p>
+                  </div>
+                </article>
+              </div>
+            </div>
 
+            <section class="testimonials-section">
+              <h3 class="section-title">Testimonials</h3>
+
+              <div class="testimonials-container">
+                <article class="testimonial-card">
+                  <div class="testimonial-header">
+                    <img
+                      src="images/profile.png"
+                      alt="Daniel Lewis"
+                      class="testimonial-avatar"
+                    />
+                    <h4>Daniel Lewis</h4>
+                  </div>
+                  <p class="testimonial-text">
+                    Cynthia was hired to create a corporate identity. We were
+                    very pleased with the work and the final result.
+                  </p>
+                </article>
+
+                <article class="testimonial-card">
+                  <div class="testimonial-header">
+                    <img
+                      src="images/profile.png"
+                      alt="Jessica Miller"
+                      class="testimonial-avatar"
+                    />
+                    <h4>Jessica Miller</h4>
+                  </div>
+                  <p class="testimonial-text">
+                    Cynthia was hired to create a corporate identity. We were
+                    very pleased with the work and the final result.
+                  </p>
+                </article>
+              </div>
+
+              <div class="testimonial-pagination">
+                <span class="pagination-progress"></span>
+              </div>
+            </section>
+          </section>
+
+          <section id="resume" class="page active">
+            <div class="section-header large-spacing">
+              <h2>Resume</h2>
+              <span class="title-rule"></span>
+              <a
+                class="resume-download"
+                href="https://docs.google.com/document/d/1pK_tq2AQVVOivOaeSDYHFQJAmZDeip6kgRhctieFnu0/edit?tab=t.0#heading=h.z0gl0eaecdun"
+                download
+              >
+                <span class="download-icon" aria-hidden="true">↓</span>
+                <span>
+                  <strong>Download résumé</strong>
+                  <small>PDF · Cynthia Otieno</small>
+                </span>
+              </a>
+            </div>
+
+            <div class="timeline-block">
+              <div class="timeline-header">
+                <span class="timeline-icon"></span>
+                <h3>Education</h3>
+              </div>
+
+              <div class="timeline-list">
+                <article class="timeline-item">
+                  <div class="dot"></div>
+                  <div class="timeline-content">
+                    <h4>Reduzer School | Software Engineering Bootcamp</h4>
+                    <div class="date">2025 — 2026</div>
+                    <p>
+                      A 12-month intensive program focused on full-stack web
+                      development, covering front-end and back-end technologies,
+                      databases, and deployment.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="timeline-item">
+                  <div class="dot"></div>
+                  <div class="timeline-content">
+                    <h4>Jomo Kenyatta University</h4>
+                    <div class="date">2019 — 2024</div>
+                    <p>
+                      Undergraduate degree in Mathematics and Computer Science.
+                      Major in Applied Mathematics and Statistics.
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <div class="timeline-block">
+              <div class="timeline-header">
+                <span class="timeline-icon"></span>
+                <h3>Experience</h3>
+              </div>
+
+              <div class="timeline-list">
+                <article class="timeline-item">
+                  <div class="dot"></div>
+                  <div class="timeline-content">
+                    <h4>
+                      Mastory, Berlin-Germany — Frontend Developer Remote
+                      Internship
+                    </h4>
+                    <div class="date">April 2024 — June 2024</div>
+                    <ul>
+                      <li>
+                        Developed responsive, scalable web applications using
+                        Vue.js, Nuxt.js, and TypeScript.
+                      </li>
+                      <li>
+                        Implemented UI/UX designs to enhance user experience.
+                      </li>
+                      <li>
+                        Ensured project scalability and maintainability through
+                        reusable code practices.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <article class="timeline-item">
+                  <div class="dot"></div>
+                  <div class="timeline-content">
+                    <h4>
+                      Principia Advisory SARL, Switzerland — Frontend Developer
+                      Remote Sub-Contract
+                    </h4>
+                    <div class="date">May 2022 — June 2022</div>
+                    <ul>
+                      <li>
+                        I developed reusable frontend components to improve code
+                        maintainability.
+                      </li>
+                      <li>
+                        I optimized UI performance and enhanced application
+                        scalability.
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <!-- <article class="timeline-item">
+                  <div class="dot"></div>
+                  <div class="timeline-content">
+                    <h4>Web Designer</h4>
+                    <div class="date">2010 — 2013</div>
+                    <p>
+                      Nemo enim ipsam voluptatem, blanditiis praesentium
+                      voluptum delenit atque corrupti, quos dolores et quas
+                      molestias exceptur.
+                    </p>
+                  </div>
+                </article> -->
+              </div>
+            </div>
+
+            <div class="skills-block">
+              <h3>My Skills</h3>
+              <div class="skill-row">
+                <div class="skill-label-row">
+                  <span>Backend Development</span>
+                  <span>80%</span>
                 </div>
+                <div class="skill-bar"><span style="width: 80%"></span></div>
+              </div>
 
-            </article>
+              <div class="skill-row">
+                <div class="skill-label-row">
+                  <span>Web Development</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 80%"></span></div>
+              </div>
 
+              <div class="skill-row">
+                <div class="skill-label-row">
+                  <span>Web Design</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill-bar"><span style="width: 80%"></span></div>
+              </div>
+            </div>
+
+            <div class="volunteering-block">
+              <div class="timeline-header">
+                <span class="timeline-icon"></span>
+                <h3>Volunteering</h3>
+              </div>
+
+              <div class="volunteering-item">
+                <h4>Technovation Girls Mentor, Kenya</h4>
+                <div class="date">JAN 2019 - 2024</div>
+                <ul>
+                  <li>
+                    I guided a team in mobile application development using MIT
+                    App Inventor and Thunkable.
+                  </li>
+                  <li>
+                    I guided teams in creating competitive business models and
+                    technology solutions.
+                  </li>
+                  <li>
+                    I mentored young innovators in problem-solving and
+                    community-based tech projects.
+                  </li>
+                  <li>
+                    Help the girls identify and brainstorm the challenges they
+                    face in their communities.
+                  </li>
+                  <li>
+                    Introduce the girls to MIT App Inventor and Artificial
+                    Intelligence to help them develop mobile applications as a
+                    solution to the challenges they face in the communities.
+                  </li>
+                  <li>
+                    I taught girls how to develop competitive business models to
+                    seek investments for their projects.
+                  </li>
+                  <li>
+                    I guided them on how they could pitch their ideas to
+                    investors in under 5 minutes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="portfolio" class="page">
+            <div class="section-header large-spacing">
+              <h2>Portfolio</h2>
+              <span class="title-rule"></span>
+            </div>
+
+            <div class="portfolio-filters">
+              <button class="filter active">All</button>
+              <button class="filter">Web design</button>
+              <button class="filter">Applications</button>
+              <button class="filter">Web development</button>
+            </div>
+
+            <div class="portfolio-grid">
+              <a
+                class="project-card project-card-link"
+                href="https://my-blog-delta-three-32.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Blogging website project"
+              >
+                <div class="project-visual dashboard-visual dark-theme">
+                  <div class="mini-window"></div>
+                  <div class="chart chart-a"></div>
+                  <div class="chart chart-b"></div>
+                  <div class="chart chart-c"></div>
+                </div>
+                <div class="project-meta">
+                  <h4>Blogging website</h4>
+                  <span>Web development</span>
+                  <span class="project-stack">Next.js · React · Vercel</span>
+                </div>
+              </a>
+
+              <a
+                class="project-card project-card-link"
+                href="https://github.com/cynthiaawuor/log-ingestion-engine"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Log Ingestion Engine repository"
+              >
+                <div class="project-visual log-ingestion-visual">
+                  <span class="log-ingestion-bracket">{ }</span>
+                  <span class="log-ingestion-label">LOGS</span>
+                </div>
+                <div class="project-meta">
+                  <h4>Log Ingestion Engine</h4>
+                  <span>Backend development</span>
+                  <p>
+                    A TypeScript service that validates, enriches, and buffers
+                    application-log batches, with RabbitMQ helpers and a local
+                    fallback queue.
+                  </p>
+                  <span class="project-stack"
+                    >TypeScript · RabbitMQ · Redis · Docker
+                  </span>
+                </div>
+              </a>
+
+              <a
+                class="project-card project-card-link"
+                href="https://github.com/cynthiaawuor/background-job-monitor"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Background Job Monitor repository"
+              >
+                <div class="project-visual job-monitor-visual">
+                  <span class="job-monitor-pulse" aria-hidden="true"></span>
+                  <span class="job-monitor-label">LIVE JOBS</span>
+                </div>
+                <div class="project-meta">
+                  <h4>Background Job Monitor</h4>
+                  <span>Backend development</span>
+                  <p>
+                    A background job queue with worker heartbeats, dead-worker
+                    recovery, and retry/backoff, monitored live through a React
+                    dashboard over WebSockets.
+                  </p>
+                  <span class="project-stack"
+                    >React · WebSockets · PostgreSQL</span
+                  >
+                </div>
+              </a>
+
+              <!-- <article class="project-card">
+                <div class="project-visual studio-visual light-theme">
+                  <div class="house-figure"></div>
+                </div>
+                <div class="project-meta">
+                  <h4>Background Job Monitoring</h4>
+                  <span>Backend development</span>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-visual mockup-visual">
+                  <div class="phone-stack">
+                    <span class="phone phone-one"></span>
+                    <span class="phone phone-two"></span>
+                    <span class="phone phone-three"></span>
+                  </div>
+                </div>
+                <div class="project-meta">
+                  <h4>Brawlball</h4>
+                  <span>Application</span>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-visual banner-visual purple-theme">
+                  <div class="big-card"></div>
+                </div>
+                <div class="project-meta">
+                  <h4>DSM</h4>
+                  <span>Web development</span>
+                </div>
+              </article>
+
+              <article class="project-card">
+                <div class="project-visual report-visual">
+                  <div class="graphic-panel"></div>
+                </div>
+                <div class="project-meta">
+                  <h4>MetaSpark</h4>
+                  <span>Web design</span>
+                </div>
+              </article> -->
+            </div>
+          </section>
+
+          <section id="blog" class="page">
+            <div class="section-header large-spacing">
+              <h2>Blog</h2>
+              <span class="title-rule"></span>
+            </div>
+
+            <div class="empty-state">
+              <p>Blog articles are currently being prepared.</p>
+            </div>
+          </section>
+
+          <!-- <section id="contact" class="page">
+            <div class="section-header large-spacing">
+              <h2>Contact</h2>
+              <span class="title-rule"></span>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-block">
+                <p class="contact-label">Email</p>
+                <a href="mailto:cynthia.otieno.dev@gmail.com"
+                  >cynthia.otieno.dev@gmail.com</a
+                >
+              </div>
+              <div class="contact-block">
+                <p class="contact-label">Phone</p>
+                <a href="tel:+254759237246">+254 (759) 237-246</a>
+              </div>
+              <div class="contact-block">
+                <p class="contact-label">Location</p>
+                <span>Kisii, Kenya</span>
+              </div>
+            </div>
+          </section> -->
         </div>
-
+      </main>
     </div>
-  
-  <!-- Testimonials -->
-<section class="testimonials-section">
-
-    <h3 class="section-title">Testimonials</h3>
-
-    <div class="testimonials-container">
-
-        <!-- Testimonial 1 -->
-        <article class="testimonial-card">
-
-            <div class="testimonial-header">
-
-                <img
-                    src="images/testimonial-1.jpg"
-                    alt="Daniel Lewis"
-                    class="testimonial-avatar"
-                >
-
-                <h4>Daniel Lewis</h4>
-
-            </div>
-
-            <p class="testimonial-text">
-                Cynthia was hired to create a corporate identity.
-                We were very pleased with the work and the final result.
-            </p>
-
-        </article>
-
-
-        <!-- Testimonial 2 -->
-        <article class="testimonial-card">
-
-            <div class="testimonial-header">
-
-                <img
-                    src="images/testimonial-2.jpg"
-                    alt="Jessica Miller"
-                    class="testimonial-avatar"
-                >
-
-                <h4>Jessica Miller</h4>
-
-            </div>
-
-            <p class="testimonial-text">
-                Cynthia was hired to create a corporate identity.
-                We were very pleased with the work and the final result.
-            </p>
-
-        </article>
-
-    </div>
-
-
-    <!-- Testimonial pagination -->
-    <div class="testimonial-pagination">
-
-        <span class="pagination-progress"></span>
-
-    </div>
-
-</section>
-      </section>
-
-        <!-- Resume -->
-        <section id="resume" class="page">
-            Resume content
-        </section>
-
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="page">
-            Portfolio content
-          <p>THIS IS THE PORTFOLIO SECTION</p>
-        </section>
-
-
-        <!-- Blog -->
-        <section id="blog" class="page">
-            Blog content
-        </section>
-
-
-        <!-- Contact -->
-        <section id="contact" class="page">
-            Contact content
-        </section>
-
-    </div>
-
-</section>
-
-    </main>
-
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>

@@ -1,35 +1,26 @@
-const navLinks = document.querySelectorAll(".nav-link");
-const pages = document.querySelectorAll(".page");
+const navLinks = document.querySelectorAll('.nav-link');
+const pages = document.querySelectorAll('.page');
 
 navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    const pageName = link.dataset.page;
 
-    link.addEventListener("click", () => {
+    navLinks.forEach((item) => item.classList.remove('active'));
+    link.classList.add('active');
 
-        const pageName = link.dataset.page;
+    pages.forEach((page) => page.classList.remove('active'));
 
+    const targetPage = document.getElementById(pageName);
+    if (targetPage) {
+      targetPage.classList.add('active');
+    }
+  });
+});
 
-        // Remove active state from navigation
-        navLinks.forEach((item) => {
-            item.classList.remove("active");
-        });
-
-
-        // Activate clicked navigation
-        link.classList.add("active");
-
-
-        // Hide all pages
-        pages.forEach((page) => {
-            page.classList.remove("active");
-        });
-
-
-        // Show selected page
-        const selectedPage =
-            document.getElementById(pageName);
-
-        selectedPage.classList.add("active");
-
-    });
-
+const filterButtons = document.querySelectorAll('.filter');
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    filterButtons.forEach((item) => item.classList.remove('active'));
+    button.classList.add('active');
+  });
 });
